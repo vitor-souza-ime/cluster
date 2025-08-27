@@ -52,4 +52,4 @@ plt.xlabel("Comprimento da Pétala (cm)")
 plt.ylabel("Largura da Pétala (cm)")
 plt.legend(title='Clusters', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.tight_layout()
-plt.show()  # ← Este já estava aqui
+plt.show() 

@@ -36,7 +36,7 @@ df['Cluster_Species'] = [f"Cluster {cluster} ({cluster_to_species[cluster]})" fo
 
 # Visualizar os resultados com Seaborn - SÉPALAS
 plt.figure(figsize=(10, 6))
-sns.scatterplot(x='sepal length (cm)', y='sepal width (cm)', hue='Cluster_Species', palette='viridis', data=df)
+sns.scatterplot(x='sepal length (cm)', y='sepal width (cm)', hue='Cluster_Species', palette='tab10', data=df)
 plt.title("Agglomerative Clustering no Conjunto de Dados Iris")
 plt.xlabel("Comprimento da Sépala (cm)")
 plt.ylabel("Largura da Sépala (cm)")
@@ -44,12 +44,13 @@ plt.legend(title='Clusters', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.tight_layout()
 plt.show()  # ← Adicionado plt.show() aqui
 
-# Visualizar os resultados com Seaborn - PÉTALAS  
+#coolwarm, viridis, plasma,
+# Visualizar os resultados com Seaborn - PÉTALAS
 plt.figure(figsize=(10, 6))
-sns.scatterplot(x='petal length (cm)', y='petal width (cm)', hue='Cluster_Species', palette='viridis', data=df)
+sns.scatterplot(x='petal length (cm)', y='petal width (cm)', hue='Cluster_Species', palette='tab10', data=df)
 plt.title("Agglomerative Clustering - Pétalas")
 plt.xlabel("Comprimento da Pétala (cm)")
 plt.ylabel("Largura da Pétala (cm)")
 plt.legend(title='Clusters', bbox_to_anchor=(1.05, 1), loc='upper left')
 plt.tight_layout()
-plt.show() 
+plt.show()  # ← Este já estava aqui
